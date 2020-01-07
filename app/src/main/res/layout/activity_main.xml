@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainContainer"
+        android:orientation="vertical">
+
+        <com.example.demoapp.SomeStrangeComponent
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:main_text="Какой-то текст"
+            custom:text_size="10dp"
+            />
+
+        <com.example.demoapp.SomeStrangeComponent
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:main_text="Какой-то другой текст"
+            custom:text_size="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/push_the_button"
+        android:id="@+id/pushable_button"/>
+
+</LinearLayout>

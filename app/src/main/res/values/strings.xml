@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string name="push_the_button">Жми на кнопку!</string>
+    <string name="default_text">Кто-то забыл указать текст</string>
+</resources>
